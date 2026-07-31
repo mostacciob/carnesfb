@@ -17,9 +17,9 @@ export const BUSINESS = {
   name: "CarnesFB",
   phone: "+54 11 3462-1780",
   email: "pedidos@carnesfb.com",
-  address: "Manuela Gómez 277, B1748CYE Gral. Rodríguez, Provincia de Buenos Aires",
+  address: "Manuela Gómez 277, Gral. Rodríguez, Pcia. de Buenos Aires",
   url: "https://carnesfb.com",
-  hours: "Lunes a domingo",
+  hours: "Lun a Sáb de 08 a 20h\nDom de 08 a 14h",
   description:
     "Distribuidora boutique de carnes premium. Pedidos directos por WhatsApp con precios actualizados al día. Calidad garantizada desde el campo a tu parrilla.",
 };
@@ -156,7 +156,7 @@ export const FAQS = [
   },
   {
     q: "¿Hacen envíos a domicilio?",
-    a: "Sí, realizamos envíos a domicilio en Buenos Aires y alrededores. La zona y el costo de envío se coordinan por WhatsApp al momento del pedido.",
+    a: "Sí, realizamos envíos a domicilio en General Rodríguez y alrededores. La zona y el costo de envío se coordinan por WhatsApp al momento del pedido.",
   },
   {
     q: "¿Qué métodos de pago aceptan?",

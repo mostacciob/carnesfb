@@ -9,7 +9,7 @@ export default function FloatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Hacer pedido por WhatsApp"
-      className="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center w-14 h-14 bg-oxblood text-parchment rounded-full shadow-lg shadow-oxblood/40 hover:bg-oxbloodDark hover:scale-110 transition-all min-w-[44px] min-h-[44px]"
+      className="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg shadow-[#25D366]/40 animate-wa-pulse hover:bg-[#1DA851] hover:!scale-110 hover:animate-none transition-colors transition-transform duration-300 min-w-[44px] min-h-[44px]"
     >
       <WhatsAppIcon className="w-7 h-7" />
     </a>

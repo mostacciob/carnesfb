@@ -84,12 +84,17 @@ module.exports = {
   			'marquee': {
   				from: { transform: 'translateX(0)' },
   				to: { transform: 'translateX(-50%)' }
+  			},
+  			'wa-pulse': {
+  				'0%, 100%': { transform: 'scale(1)' },
+  				'50%': { transform: 'scale(1.05)' }
   			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-  			'marquee': 'marquee 30s linear infinite'
+  			'marquee': 'marquee 30s linear infinite',
+  			'wa-pulse': 'wa-pulse 3.2s ease-in-out infinite'
   		}
   	}
   },

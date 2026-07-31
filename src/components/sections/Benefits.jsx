@@ -16,7 +16,7 @@ const BENEFITS = [
   {
     icon: Truck,
     title: "Envío a Domicilio",
-    text: "Coordinamos la entrega en Buenos Aires y alrededores. Cadena de frío garantizada hasta tu puerta.",
+    text: "Coordinamos la entrega en General Rodríguez y alrededores. Cadena de frío garantizada hasta tu puerta.",
   },
   {
     icon: ShieldCheck,

@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, Clock, Mail, Phone } from "lucide-react";
+import { MapPin, Clock, Mail, Phone, Instagram } from "lucide-react";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 import { BUSINESS, CATEGORIES, GENERAL_WHATSAPP_LINK } from "@/data/products";
 
@@ -15,6 +15,15 @@ export default function Footer() {
             <p className="mt-4 text-parchment/70 leading-relaxed">
               Distribuidora boutique de carnes premium. Del campo a tu parrilla.
             </p>
+            <a
+              href="https://www.instagram.com/carnes.fb/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram de CarnesFB"
+              className="mt-5 inline-flex items-center justify-center w-10 h-10 rounded-full border border-parchment/20 text-parchment/80 hover:text-oxblood hover:border-oxblood transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
           </div>
 
           <nav aria-label="Categorías">
@@ -39,7 +48,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 mt-1 text-oxblood shrink-0" />
-                <span>{BUSINESS.hours}</span>
+                <span className="whitespace-pre-line">{BUSINESS.hours}</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 mt-1 text-oxblood shrink-0" />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 import { GENERAL_WHATSAPP_LINK, BUSINESS } from "@/data/products";
 
@@ -48,15 +48,26 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a
-          href={GENERAL_WHATSAPP_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden lg:inline-flex items-center gap-2 bg-oxblood text-parchment px-5 py-3 font-heading font-semibold uppercase tracking-wider text-sm hover:bg-oxbloodDark transition-colors min-h-[44px]"
-        >
-          <WhatsAppIcon className="w-4 h-4" />
-          Pedir ahora
-        </a>
+        <div className="hidden lg:flex items-center gap-3">
+          <a
+            href="https://www.instagram.com/carnes.fb/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram de CarnesFB"
+            className="inline-flex items-center justify-center w-11 h-11 text-obsidian/80 hover:text-oxblood transition-colors"
+          >
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a
+            href={GENERAL_WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-oxblood text-parchment px-5 py-3 font-heading font-semibold uppercase tracking-wider text-sm hover:bg-oxbloodDark transition-colors min-h-[44px]"
+          >
+            <WhatsAppIcon className="w-4 h-4" />
+            Pedir ahora
+          </a>
+        </div>
 
         <button
           type="button"
@@ -93,6 +104,19 @@ export default function Navbar() {
               >
                 <WhatsAppIcon className="w-5 h-5" />
                 Pedir ahora
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/carnes.fb/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                aria-label="Instagram de CarnesFB"
+                className="mt-2 flex items-center justify-center gap-2 border border-obsidian/15 text-obsidian px-5 py-4 font-heading uppercase tracking-wider"
+              >
+                <Instagram className="w-5 h-5" />
+                Instagram
               </a>
             </li>
           </ul>
