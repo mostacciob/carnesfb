@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <rect width="480" height="480" fill="#0D0D0D"/>
+  <rect x="16" y="16" width="448" height="448" fill="none" stroke="#B22222" stroke-width="2"/>
+  <text x="240" y="234" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="42" letter-spacing="4" fill="#F4F4F4">EXTRAS</text>
+  <text x="240" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="2" fill="#B22222">FOTO PROXIMAMENTE</text>
+</svg>
