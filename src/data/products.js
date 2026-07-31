@@ -96,10 +96,8 @@ export const PRODUCTS = [
   // POLLO
   // ============================================================
   { id: "pechuga", name: "Pechuga", category: "pollo", price: 5200, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/d4499a5c1_generated_4e865002.png", description: "Pechuga magra, fresca y sin hueso." },
-  { id: "muslo-pata", name: "Muslo y Pata", category: "pollo", price: 4000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/553ce35de_generated_e252254e.png", description: "Cuarto trasero jugoso, ideal para parrilla o horno." },
+  { id: "muslo-pata", name: "Pata y Muslo", category: "pollo", price: 4000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/553ce35de_generated_e252254e.png", description: "Cuarto trasero jugoso, ideal para parrilla o horno." },
   { id: "alitas", name: "Alitas", category: "pollo", price: 2500, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/0e6c784d1_generated_a3c1770b.png", description: "Alitas frescas, perfectas para picadas y parrilla." },
-  { id: "suprema", name: "Suprema", category: "pollo", price: 9000, unit: "kg", image: PLACEHOLDER.pollo, description: "Pechuga de pollo deshuesada y sin piel." },
-  { id: "pata-y-muslo-oferta", name: "Pata y Muslo (Oferta)", category: "pollo", price: 3330, unit: "kg", image: PLACEHOLDER.pollo, description: "Cuarto trasero de pollo, precio especial por mayor cantidad." },
   { id: "pollo-entero", name: "Pollo Entero", category: "pollo", price: 4000, unit: "kg", image: PLACEHOLDER.pollo, description: "Pollo entero fresco, listo para el horno o la parrilla." },
   { id: "cajon-de-pollo", name: "Cajón de Pollo", category: "pollo", price: 56000, unit: "cajón", image: PLACEHOLDER.pollo, description: "Cajón de pollo para comercios y grandes consumos." },
 
