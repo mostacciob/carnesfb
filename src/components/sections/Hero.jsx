@@ -27,7 +27,7 @@ export default function Hero() {
               className="mt-3 font-heading font-semibold uppercase text-parchment/70"
               style={{ fontSize: "clamp(1.4rem, 3vw, 2.4rem)" }}
             >
-              Calidad Suprema
+              Venta por Mayor y Menor
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -35,8 +35,10 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-8 max-w-md text-parchment/80 text-lg leading-relaxed"
             >
-              Del campo a tu parrilla. Cortes premium de res, cerdo, pollo y achuras, con precios
-              actualizados al día. Pedidos directos por WhatsApp.
+              Del campo a tu parrilla. Todos los cortes al mejor precio.
+              <br />
+              <br />
+              ¡Hacé tu pedido ya!
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
