@@ -13,7 +13,7 @@ export default function Footer() {
               Carnes<span className="text-oxblood">FB</span>
             </p>
             <p className="mt-4 text-parchment/70 leading-relaxed">
-              Distribuidora boutique de carnes premium. Del campo a tu parrilla.
+              Distribuidora de carnes premium con los mejores precios. Del campo a tu parrilla.
             </p>
             <a
               href="https://www.instagram.com/carnes.fb/"
@@ -44,7 +44,14 @@ export default function Footer() {
             <ul className="space-y-3 text-parchment/80">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-1 text-oxblood shrink-0" />
-                <span>{BUSINESS.address}</span>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS.address)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-parchment"
+                >
+                  {BUSINESS.address}
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 mt-1 text-oxblood shrink-0" />

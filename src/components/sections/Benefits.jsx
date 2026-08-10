@@ -6,7 +6,7 @@ const BENEFITS = [
   {
     icon: Award,
     title: "Calidad Premium",
-    text: "Seleccionamos cada corte a mano, con estándares de carnicería boutique. Solo lo mejor llega a tu parrilla.",
+    text: "Seleccionamos cada corte a mano, con altos estándares de calidad. Solo lo mejor llega a tu parrilla.",
   },
   {
     icon: RefreshCw,

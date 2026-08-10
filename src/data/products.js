@@ -20,7 +20,7 @@ export const BUSINESS = {
   url: "https://carnesfb.com.ar",
   hours: "Lun a Sáb de 08 a 20h\nDom de 08 a 14h",
   description:
-    "Distribuidora boutique de carnes premium. Pedidos directos por WhatsApp con precios actualizados al día. Calidad garantizada desde el campo a tu parrilla.",
+    "Distribuidora de carnes premium con los mejores precios. Pedidos directos por WhatsApp con precios actualizados al día. Calidad garantizada desde el campo a tu parrilla.",
 };
 
 export const CATEGORIES = [
