@@ -31,7 +31,7 @@ export const CATEGORIES = [
   { id: "extras", label: "Extras", description: "Leña, carbón, huevos y todo para el fuego" },
 ];
 
-export const HERO_IMAGE = "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/09362a1f6_generated_bd2b56e0.png";
+export const HERO_IMAGE = "/hero.webp";
 
 // Imagen genérica por categoría, mientras se generan las fotos reales de cada corte.
 const PLACEHOLDER = {
@@ -46,17 +46,17 @@ export const PRODUCTS = [
   // ============================================================
   // RES
   // ============================================================
-  { id: "bife-de-chorizo", name: "Bife de Chorizo", category: "res", price: 16000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/ef569a20d_generated_image.png", description: "Corte magro, jugoso y de sabor intenso. El clásico de la parrilla." },
-  { id: "tira-de-asado", name: "Tira de Asado", category: "res", price: 17000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/0ccd9dd24_generated_image.png", description: "Costillar cortado en tiras, el clásico infaltable del asado." },
-  { id: "vacio", name: "Vacío", category: "res", price: 19000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/1e3de450f_generated_image.png", description: "Corte sin hueso, ideal para asar lento a la parrilla." },
-  { id: "ojo-de-bife", name: "Ojo de Bife", category: "res", price: 15000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/1449d85a8_generated_66c61fe1.png", description: "Ribeye con veteado de grasa que aporta terneza y sabor." },
-  { id: "entrana", name: "Entraña", category: "res", price: 22000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/9f742493f_generated_a7edbf95.png", description: "Fina, de cocción rápida y sabor inconfundible." },
-  { id: "lomo", name: "Lomo", category: "res", price: 21000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/d57744f1f_generated_image.png", description: "El corte más tierno de la res, ideal para la parrilla." },
-  { id: "colita-de-cuadril", name: "Colita de Cuadril", category: "res", price: 20000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/7226d49e5_generated_image.png", description: "La joya del cuadril: tierna, jugosa y con una fina capa de grasa." },
-  { id: "asado", name: "Asado", category: "res", price: 16000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/bcc8c162e_generated_image.png", description: "Costillar de res, imprescindible en cualquier parrillada." },
-  { id: "peceto", name: "Peceto", category: "res", price: 20000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/4e8753f1a_generated_image.png", description: "Corte alargado y magro, clásico para vitel toné o al horno." },
-  { id: "cuadril", name: "Cuadril", category: "res", price: 16000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/0c412a98c_generated_image.png", description: "Corte jugoso y tierno, ideal para la parrilla o el horno." },
-  { id: "cuadrada", name: "Cuadrada", category: "res", price: 17000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/2910523b6_generated_image.png", description: "Corte magro de la pierna, ideal para milanesas o al horno." },
+  { id: "bife-de-chorizo", name: "Bife de Chorizo", category: "res", price: 16000, unit: "kg", image: "/products/bife-de-chorizo.webp", description: "Corte magro, jugoso y de sabor intenso. El clásico de la parrilla." },
+  { id: "tira-de-asado", name: "Tira de Asado", category: "res", price: 17000, unit: "kg", image: "/products/tira-de-asado.webp", description: "Costillar cortado en tiras, el clásico infaltable del asado." },
+  { id: "vacio", name: "Vacío", category: "res", price: 19000, unit: "kg", image: "/products/vacio.webp", description: "Corte sin hueso, ideal para asar lento a la parrilla." },
+  { id: "ojo-de-bife", name: "Ojo de Bife", category: "res", price: 15000, unit: "kg", image: "/products/ojo-de-bife.webp", description: "Ribeye con veteado de grasa que aporta terneza y sabor." },
+  { id: "entrana", name: "Entraña", category: "res", price: 22000, unit: "kg", image: "/products/entrana.webp", description: "Fina, de cocción rápida y sabor inconfundible." },
+  { id: "lomo", name: "Lomo", category: "res", price: 21000, unit: "kg", image: "/products/lomo.webp", description: "El corte más tierno de la res, ideal para la parrilla." },
+  { id: "colita-de-cuadril", name: "Colita de Cuadril", category: "res", price: 20000, unit: "kg", image: "/products/colita-de-cuadril.webp", description: "La joya del cuadril: tierna, jugosa y con una fina capa de grasa." },
+  { id: "asado", name: "Asado", category: "res", price: 16000, unit: "kg", image: "/products/asado.webp", description: "Costillar de res, imprescindible en cualquier parrillada." },
+  { id: "peceto", name: "Peceto", category: "res", price: 20000, unit: "kg", image: "/products/peceto.webp", description: "Corte alargado y magro, clásico para vitel toné o al horno." },
+  { id: "cuadril", name: "Cuadril", category: "res", price: 16000, unit: "kg", image: "/products/cuadril.webp", description: "Corte jugoso y tierno, ideal para la parrilla o el horno." },
+  { id: "cuadrada", name: "Cuadrada", category: "res", price: 17000, unit: "kg", image: "/products/cuadrada.webp", description: "Corte magro de la pierna, ideal para milanesas o al horno." },
   { id: "tortuguita", name: "Tortuguita", category: "res", price: 16000, unit: "kg", image: PLACEHOLDER.res, description: "Corte de la pierna, tierno y de sabor suave." },
   { id: "palomita", name: "Palomita", category: "res", price: 16000, unit: "kg", image: PLACEHOLDER.res, description: "Corte pequeño y magro, ideal para milanesas." },
   { id: "roast-beef", name: "Roast Beef", category: "res", price: 15000, unit: "kg", image: PLACEHOLDER.res, description: "Corte magro y compacto, perfecto para el horno." },
@@ -76,14 +76,14 @@ export const PRODUCTS = [
   // ============================================================
   // CERDO
   // ============================================================
-  { id: "bondiola", name: "Bondiola", category: "cerdo", price: 9000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/423e28971_generated_a1d4c293.png", description: "Magro y sabroso, perfecto para sandwiches o parrilla." },
-  { id: "pechito-cerdo", name: "Pechito de Cerdo", category: "cerdo", price: 7500, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/d2163cd55_generated_810a52d9.png", description: "Costillar de cerdo tierno, ideal al horno o parrilla." },
-  { id: "costilla-cerdo", name: "Costilla de Cerdo", category: "cerdo", price: 8400, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/ddf39a562_generated_77c78e77.png", description: "Costilla trozada, jugosa y de cocción sencilla." },
-  { id: "osobuco-cerdo", name: "Osobuco de Cerdo", category: "cerdo", price: 4000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/16f00b5b5_generated_image.png", description: "Corte con hueso, ideal para guisos." },
-  { id: "patitas-de-cerdo", name: "Patitas de Cerdo", category: "cerdo", price: 500, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/0c1241c38_generated_image.png", description: "Para caldos y preparaciones tradicionales." },
-  { id: "carre", name: "Carré", category: "cerdo", price: 7000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/d2c601d6b_generated_image.png", description: "Costillar de cerdo con lomo, ideal para el horno." },
-  { id: "matambre-de-cerdo", name: "Matambre de Cerdo", category: "cerdo", price: 9500, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/daaae9e1b_generated_image.png", description: "Corte plano y sabroso, para arrollados o parrilla." },
-  { id: "pulpa-de-cerdo", name: "Pulpa de Cerdo", category: "cerdo", price: 7500, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/9c4c18aa2_generated_image.png", description: "Corte magro, ideal para milanesas y bifes." },
+  { id: "bondiola", name: "Bondiola", category: "cerdo", price: 9000, unit: "kg", image: "/products/bondiola.webp", description: "Magro y sabroso, perfecto para sandwiches o parrilla." },
+  { id: "pechito-cerdo", name: "Pechito de Cerdo", category: "cerdo", price: 7500, unit: "kg", image: "/products/pechito-cerdo.webp", description: "Costillar de cerdo tierno, ideal al horno o parrilla." },
+  { id: "costilla-cerdo", name: "Costilla de Cerdo", category: "cerdo", price: 8400, unit: "kg", image: "/products/costilla-cerdo.webp", description: "Costilla trozada, jugosa y de cocción sencilla." },
+  { id: "osobuco-cerdo", name: "Osobuco de Cerdo", category: "cerdo", price: 4000, unit: "kg", image: "/products/osobuco-cerdo.webp", description: "Corte con hueso, ideal para guisos." },
+  { id: "patitas-de-cerdo", name: "Patitas de Cerdo", category: "cerdo", price: 500, unit: "kg", image: "/products/patitas-de-cerdo.webp", description: "Para caldos y preparaciones tradicionales." },
+  { id: "carre", name: "Carré", category: "cerdo", price: 7000, unit: "kg", image: "/products/carre.webp", description: "Costillar de cerdo con lomo, ideal para el horno." },
+  { id: "matambre-de-cerdo", name: "Matambre de Cerdo", category: "cerdo", price: 9500, unit: "kg", image: "/products/matambre-de-cerdo.webp", description: "Corte plano y sabroso, para arrollados o parrilla." },
+  { id: "pulpa-de-cerdo", name: "Pulpa de Cerdo", category: "cerdo", price: 7500, unit: "kg", image: "/products/pulpa-de-cerdo.webp", description: "Corte magro, ideal para milanesas y bifes." },
   { id: "cuerito", name: "Cuerito", category: "cerdo", price: 5500, unit: "kg", image: PLACEHOLDER.cerdo, description: "Cuerito de cerdo, para chicharrones y guisos." },
   { id: "hueso-de-cerdo", name: "Hueso de Cerdo", category: "cerdo", price: 3800, unit: "kg", image: PLACEHOLDER.cerdo, description: "Para caldos y preparaciones." },
   { id: "jamon-de-cerdo", name: "Jamón de Cerdo", category: "cerdo", price: 4800, unit: "kg", image: PLACEHOLDER.cerdo, description: "Corte fresco de la pierna trasera, versátil para el horno." },
@@ -94,23 +94,23 @@ export const PRODUCTS = [
   // ============================================================
   // POLLO
   // ============================================================
-  { id: "pechuga", name: "Pechuga", category: "pollo", price: 5200, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/d4499a5c1_generated_4e865002.png", description: "Pechuga magra, fresca y sin hueso." },
-  { id: "muslo-pata", name: "Pata y Muslo", category: "pollo", price: 4000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/553ce35de_generated_e252254e.png", description: "Cuarto trasero jugoso, ideal para parrilla o horno." },
-  { id: "alitas", name: "Alitas", category: "pollo", price: 2500, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/0e6c784d1_generated_a3c1770b.png", description: "Alitas frescas, perfectas para picadas y parrilla." },
-  { id: "pollo-entero", name: "Pollo Entero", category: "pollo", price: 4000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/3c8e6f626_generated_image.png", description: "Pollo entero fresco, listo para el horno o la parrilla." },
-  { id: "cajon-de-pollo", name: "Cajón de Pollo", category: "pollo", price: 56000, unit: "cajón", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/314b89e46_generated_image.png", description: "Cajón de pollo para comercios y grandes consumos." },
+  { id: "pechuga", name: "Pechuga", category: "pollo", price: 5200, unit: "kg", image: "/products/pechuga.webp", description: "Pechuga magra, fresca y sin hueso." },
+  { id: "muslo-pata", name: "Pata y Muslo", category: "pollo", price: 4000, unit: "kg", image: "/products/muslo-pata.webp", description: "Cuarto trasero jugoso, ideal para parrilla o horno." },
+  { id: "alitas", name: "Alitas", category: "pollo", price: 2500, unit: "kg", image: "/products/alitas.webp", description: "Alitas frescas, perfectas para picadas y parrilla." },
+  { id: "pollo-entero", name: "Pollo Entero", category: "pollo", price: 4000, unit: "kg", image: "/products/pollo-entero.webp", description: "Pollo entero fresco, listo para el horno o la parrilla." },
+  { id: "cajon-de-pollo", name: "Cajón de Pollo", category: "pollo", price: 56000, unit: "cajón", image: "/products/cajon-de-pollo.webp", description: "Cajón de pollo para comercios y grandes consumos." },
 
   // ============================================================
   // ACHURAS
   // ============================================================
-  { id: "chorizo", name: "Chorizo", category: "achuras", price: 6200, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/cd83310b4_generated_0bea8c21.png", description: "Chorizo fresco colorado para la parrilla." },
-  { id: "morcilla", name: "Morcilla", category: "achuras", price: 7000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/b84ec78d1_generated_52cd565b.png", description: "Morcilla dulce o picante, lista para el asado." },
-  { id: "mollejas", name: "Mollejas", category: "achuras", price: 23000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/59244db65_generated_be117ba1.png", description: "Mollejas bovinas tiernas, el manjar de la parrilla." },
-  { id: "hamburguesas", name: "Hamburguesas", category: "achuras", price: 14000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/2b67e9772_generated_image.png", description: "Hamburguesas caseras, listas para la parrilla." },
-  { id: "salchicha-parrillera", name: "Salchicha Parrillera", category: "achuras", price: 9000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/410ba4e19_generated_image.png", description: "Salchicha fresca ideal para la parrilla." },
-  { id: "morcilla-vasca", name: "Morcilla Vasca", category: "achuras", price: 8000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/863f4ac10_generated_image.png", description: "Morcilla estilo vasco, con un toque especiado." },
-  { id: "chorizo-cerdo-caja", name: "Chorizo de Cerdo (Caja)", category: "achuras", price: 26000, unit: "cajón", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/53f8e4cdf_generated_image.png", description: "Chorizo de cerdo por caja, para comercios." },
-  { id: "longaniza", name: "Longaniza", category: "achuras", price: 26000, unit: "kg", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/f32c14e16_generated_image.png", description: "Longaniza fresca, curada con especias." },
+  { id: "chorizo", name: "Chorizo", category: "achuras", price: 6200, unit: "kg", image: "/products/chorizo.webp", description: "Chorizo fresco colorado para la parrilla." },
+  { id: "morcilla", name: "Morcilla", category: "achuras", price: 7000, unit: "kg", image: "/products/morcilla.webp", description: "Morcilla dulce o picante, lista para el asado." },
+  { id: "mollejas", name: "Mollejas", category: "achuras", price: 23000, unit: "kg", image: "/products/mollejas.webp", description: "Mollejas bovinas tiernas, el manjar de la parrilla." },
+  { id: "hamburguesas", name: "Hamburguesas", category: "achuras", price: 14000, unit: "kg", image: "/products/hamburguesas.webp", description: "Hamburguesas caseras, listas para la parrilla." },
+  { id: "salchicha-parrillera", name: "Salchicha Parrillera", category: "achuras", price: 9000, unit: "kg", image: "/products/salchicha-parrillera.webp", description: "Salchicha fresca ideal para la parrilla." },
+  { id: "morcilla-vasca", name: "Morcilla Vasca", category: "achuras", price: 8000, unit: "kg", image: "/products/morcilla-vasca.webp", description: "Morcilla estilo vasco, con un toque especiado." },
+  { id: "chorizo-cerdo-caja", name: "Chorizo de Cerdo (Caja)", category: "achuras", price: 26000, unit: "cajón", image: "/products/chorizo-cerdo-caja.webp", description: "Chorizo de cerdo por caja, para comercios." },
+  { id: "longaniza", name: "Longaniza", category: "achuras", price: 26000, unit: "kg", image: "/products/longaniza.webp", description: "Longaniza fresca, curada con especias." },
   { id: "chorizo-cerdo", name: "Chorizo de Cerdo", category: "achuras", price: 8000, unit: "kg", image: PLACEHOLDER.achuras, description: "Chorizo fresco de cerdo." },
   { id: "chorizo-mezcla", name: "Chorizo Mezcla", category: "achuras", price: 8000, unit: "kg", image: PLACEHOLDER.achuras, description: "Chorizo mixto de carne y cerdo." },
   { id: "higado", name: "Hígado", category: "achuras", price: 3400, unit: "kg", image: PLACEHOLDER.achuras, description: "Hígado fresco, rico en hierro." },
@@ -129,14 +129,14 @@ export const PRODUCTS = [
   // ============================================================
   // EXTRAS
   // ============================================================
-  { id: "lena-tipo-1", name: "Leña Tipo 1", category: "extras", price: 4500, unit: "atado", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/8ceb60ffe_generated_image.png", description: "Leña seleccionada para el fuego." },
-  { id: "lena-tipo-2", name: "Leña Tipo 2", category: "extras", price: 4000, unit: "atado", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/606468bcf_generated_image.png", description: "Leña seleccionada para el fuego." },
-  { id: "carbon-grueso", name: "Carbón Grueso", category: "extras", price: 6200, unit: "bolsa", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/0d5e3d290_generated_image.png", description: "Carbón vacuno grueso, ideal para brasas duraderas." },
-  { id: "carbon-mediano", name: "Carbón Mediano", category: "extras", price: 5500, unit: "bolsa", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/00e2bab65_generated_image.png", description: "Carbón vacuno mediano, encendido parejo." },
-  { id: "docena-de-huevos-1", name: "Docena de Huevos Tipo 1", category: "extras", price: 2000, unit: "docena", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/337b88d53_generated_image.png", description: "Docena de huevos frescos." },
-  { id: "docena-de-huevos-2", name: "Docena de Huevos Tipo 2", category: "extras", price: 1700, unit: "docena", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/b696e110a_generated_image.png", description: "Docena de huevos frescos." },
-  { id: "miel-namuncura", name: "Miel Namuncurá", category: "extras", price: 8000, unit: "frasco 500g", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/a954448ad_generated_image.png", description: "De la colmena a tu mesa. Miel cruda, sin agregados, calidad de exportación." },
-  { id: "iniciadores", name: "Iniciadores", category: "extras", price: 3500, unit: "paquete", image: "https://media.base44.com/images/public/6a6c9e97175b563ac1a44832/b6e75cdcc_generated_image.png", description: "Iniciadores de fuego para encender rápido la parrilla." },
+  { id: "lena-tipo-1", name: "Leña Tipo 1", category: "extras", price: 4500, unit: "atado", image: "/products/lena-tipo-1.webp", description: "Leña seleccionada para el fuego." },
+  { id: "lena-tipo-2", name: "Leña Tipo 2", category: "extras", price: 4000, unit: "atado", image: "/products/lena-tipo-2.webp", description: "Leña seleccionada para el fuego." },
+  { id: "carbon-grueso", name: "Carbón Grueso", category: "extras", price: 6200, unit: "bolsa", image: "/products/carbon-grueso.webp", description: "Carbón vacuno grueso, ideal para brasas duraderas." },
+  { id: "carbon-mediano", name: "Carbón Mediano", category: "extras", price: 5500, unit: "bolsa", image: "/products/carbon-mediano.webp", description: "Carbón vacuno mediano, encendido parejo." },
+  { id: "docena-de-huevos-1", name: "Docena de Huevos Tipo 1", category: "extras", price: 2000, unit: "docena", image: "/products/docena-de-huevos-1.webp", description: "Docena de huevos frescos." },
+  { id: "docena-de-huevos-2", name: "Docena de Huevos Tipo 2", category: "extras", price: 1700, unit: "docena", image: "/products/docena-de-huevos-2.webp", description: "Docena de huevos frescos." },
+  { id: "miel-namuncura", name: "Miel Namuncurá", category: "extras", price: 8000, unit: "frasco 500g", image: "/products/miel-namuncura.webp", description: "De la colmena a tu mesa. Miel cruda, sin agregados, calidad de exportación." },
+  { id: "iniciadores", name: "Iniciadores", category: "extras", price: 3500, unit: "paquete", image: "/products/iniciadores.webp", description: "Iniciadores de fuego para encender rápido la parrilla." },
   { id: "espinillo", name: "Espinillo", category: "extras", price: 6000, unit: "bolsa", image: PLACEHOLDER.extras, description: "Leña de espinillo, de larga duración." },
   { id: "quebracho", name: "Quebracho", category: "extras", price: 6000, unit: "bolsa", image: PLACEHOLDER.extras, description: "Leña de quebracho, ideal para brasas duraderas." },
   { id: "media-docena-huevos-1", name: "Media Docena de Huevos Tipo 1", category: "extras", price: 1300, unit: "½ docena", image: PLACEHOLDER.extras, description: "Media docena de huevos frescos." },
