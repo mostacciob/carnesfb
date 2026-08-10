@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fetchSheetPrices } from "@/lib/sheetPrices";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
@@ -9,6 +9,16 @@ export default function Catalog() {
   const [active, setActive] = useState("res");
   const [prices, setPrices] = useState({});
   const [loadingPrices, setLoadingPrices] = useState(true);
+  const sectionRef = useRef(null);
+  const STICKY_OFFSET = 64;
+
+  const handleCategoryClick = (id) => {
+    setActive(id);
+    if (sectionRef.current) {
+      const top = sectionRef.current.getBoundingClientRect().top + window.scrollY - STICKY_OFFSET;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     let mounted = true;
@@ -25,7 +35,7 @@ export default function Catalog() {
   const displayProducts = filtered.map((p) => ({ ...p, price: prices[p.id] ?? p.price }));
 
   return (
-    <section id="catalogo" className="bg-white py-24 lg:py-32">
+    <section id="catalogo" ref={sectionRef} className="bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
         <div className="max-w-2xl mb-12">
           <Reveal>
@@ -49,7 +59,7 @@ export default function Catalog() {
                   type="button"
                   role="tab"
                   aria-selected={isActive}
-                  onClick={() => setActive(c.id)}
+                  onClick={() => handleCategoryClick(c.id)}
                   className={`shrink-0 px-6 py-3 font-heading font-bold uppercase tracking-wider text-sm transition-colors min-h-[44px] ${
                     isActive
                       ? "bg-oxblood text-parchment"
