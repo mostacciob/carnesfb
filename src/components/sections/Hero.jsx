@@ -77,6 +77,7 @@ export default function Hero() {
               alt="Primer plano de un corte de ribeye crudo mostrando el veteado de la grasa"
               className="w-full h-[42vh] sm:h-[52vh] lg:h-[84vh] object-cover"
               loading="eager"
+              fetchpriority="high"
             />
           </motion.div>
         </div>

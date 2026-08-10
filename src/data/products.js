@@ -16,9 +16,8 @@ export const WHATSAPP_NUMBER = "5491134621780";
 export const BUSINESS = {
   name: "CarnesFB",
   phone: "+54 11 3462-1780",
-  email: "pedidos@carnesfb.com",
   address: "Manuela Gómez 277, Gral. Rodríguez, Pcia. de Buenos Aires",
-  url: "https://carnesfb.com",
+  url: "https://carnesfb.com.ar",
   hours: "Lun a Sáb de 08 a 20h\nDom de 08 a 14h",
   description:
     "Distribuidora boutique de carnes premium. Pedidos directos por WhatsApp con precios actualizados al día. Calidad garantizada desde el campo a tu parrilla.",

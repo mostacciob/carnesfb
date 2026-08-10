@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, Clock, Mail, Phone, Instagram } from "lucide-react";
+import { MapPin, Clock, Phone, Instagram } from "lucide-react";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 import { BUSINESS, CATEGORIES, GENERAL_WHATSAPP_LINK } from "@/data/products";
 
@@ -54,12 +54,6 @@ export default function Footer() {
                 <Phone className="w-4 h-4 mt-1 text-oxblood shrink-0" />
                 <a href={`tel:${BUSINESS.phone.replace(/\s/g, "")}`} className="hover:text-parchment">
                   {BUSINESS.phone}
-                </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail className="w-4 h-4 mt-1 text-oxblood shrink-0" />
-                <a href={`mailto:${BUSINESS.email}`} className="hover:text-parchment">
-                  {BUSINESS.email}
                 </a>
               </li>
             </ul>
