@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { BUSINESS, PRODUCTS, CATEGORIES, FAQS } from "@/data/products";
-import { fetchSheetPrices } from "@/lib/sheetPrices";
+import { BUSINESS, CATEGORIES, FAQS } from "@/data/products";
+import { fetchCatalog } from "@/lib/sheetCatalog";
 
 const INSTAGRAM_URL = "https://www.instagram.com/carnes.fb/";
 
@@ -9,16 +9,16 @@ function todayISODate() {
 }
 
 export default function SeoSchema() {
-  const [prices, setPrices] = useState({});
+  const [productos, setProductos] = useState([]);
 
   useEffect(() => {
-    let mounted = true;
-    fetchSheetPrices()
-      .then((prices) => {
-        if (mounted) setPrices(prices);
+    let montado = true;
+    fetchCatalog()
+      .then(({ productos }) => {
+        if (montado) setProductos(productos);
       })
       .catch(() => {});
-    return () => { mounted = false; };
+    return () => { montado = false; };
   }, []);
 
   const priceValidUntil = todayISODate();
@@ -78,22 +78,25 @@ export default function SeoSchema() {
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
     },
-    {
+  ];
+
+  if (productos.length > 0) {
+    schema.push({
       "@context": "https://schema.org",
       "@type": "ItemList",
-      itemListElement: PRODUCTS.map((p, i) => ({
+      itemListElement: productos.map((p, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Product",
           name: p.name,
-          description: p.description,
+          ...(p.description ? { description: p.description } : {}),
           category: CATEGORIES.find((c) => c.id === p.category)?.label,
-          image: p.image,
+          image: `${BUSINESS.url}${p.image}`,
           url: `${BUSINESS.url}/#catalogo`,
           offers: {
             "@type": "Offer",
-            price: prices[p.id] ?? p.price,
+            price: p.price,
             priceCurrency: "ARS",
             priceValidUntil,
             availability: "https://schema.org/InStock",
@@ -101,8 +104,8 @@ export default function SeoSchema() {
           },
         },
       })),
-    },
-  ];
+    });
+  }
 
   return (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
