@@ -1,0 +1,48 @@
+// ⚠️  ARCHIVO GENERADO AUTOMÁTICAMENTE — no editar a mano.
+// Lo regenera scripts/generar-fotos.mjs antes de cada dev/build.
+//
+// Para agregar la foto de un producto, copiá el archivo en
+// public/products/ con el nombre del producto en minúscula y con
+// guiones. Ej: "Bola de lomo" → public/products/bola-de-lomo.webp
+export const PRODUCT_IMAGES = {
+  "alitas": "/products/alitas.webp",
+  "asado": "/products/asado.webp",
+  "bife-de-chorizo": "/products/bife-de-chorizo.webp",
+  "bondiola": "/products/bondiola.webp",
+  "cajon-de-pollo": "/products/cajon-de-pollo.webp",
+  "carbon-grueso": "/products/carbon-grueso.webp",
+  "carbon-mediano": "/products/carbon-mediano.webp",
+  "carre": "/products/carre.webp",
+  "chorizo": "/products/chorizo.webp",
+  "chorizo-cerdo-caja": "/products/chorizo-cerdo-caja.webp",
+  "colita-de-cuadril": "/products/colita-de-cuadril.webp",
+  "costilla-cerdo": "/products/costilla-cerdo.webp",
+  "cuadrada": "/products/cuadrada.webp",
+  "cuadril": "/products/cuadril.webp",
+  "docena-de-huevos-1": "/products/docena-de-huevos-1.webp",
+  "docena-de-huevos-2": "/products/docena-de-huevos-2.webp",
+  "entrana": "/products/entrana.webp",
+  "hamburguesas": "/products/hamburguesas.webp",
+  "iniciadores": "/products/iniciadores.webp",
+  "lena-tipo-1": "/products/lena-tipo-1.webp",
+  "lena-tipo-2": "/products/lena-tipo-2.webp",
+  "lomo": "/products/lomo.webp",
+  "longaniza": "/products/longaniza.webp",
+  "matambre-de-cerdo": "/products/matambre-de-cerdo.webp",
+  "miel-namuncura": "/products/miel-namuncura.webp",
+  "mollejas": "/products/mollejas.webp",
+  "morcilla": "/products/morcilla.webp",
+  "morcilla-vasca": "/products/morcilla-vasca.webp",
+  "muslo-pata": "/products/muslo-pata.webp",
+  "ojo-de-bife": "/products/ojo-de-bife.webp",
+  "osobuco-cerdo": "/products/osobuco-cerdo.webp",
+  "patitas-de-cerdo": "/products/patitas-de-cerdo.webp",
+  "peceto": "/products/peceto.webp",
+  "pechito-cerdo": "/products/pechito-cerdo.webp",
+  "pechuga": "/products/pechuga.webp",
+  "pollo-entero": "/products/pollo-entero.webp",
+  "pulpa-de-cerdo": "/products/pulpa-de-cerdo.webp",
+  "salchicha-parrillera": "/products/salchicha-parrillera.webp",
+  "tira-de-asado": "/products/tira-de-asado.webp",
+  "vacio": "/products/vacio.webp",
+};

@@ -10,6 +10,7 @@
 // ============================================================
 
 import { CATEGORIES, PRODUCT_META, PLACEHOLDER, CATALOG_FALLBACK } from "@/data/products";
+import { PRODUCT_IMAGES } from "@/data/productImages";
 
 const SPREADSHEET_ID = "1HfL8TI_CUOZAHxj3W-RFIFpF0LtfiOfMwYcIzRf2Ccc";
 
@@ -80,6 +81,14 @@ function parseCsvLine(line) {
 function decorar({ category, name, price }) {
   const slug = slugify(name);
   const meta = PRODUCT_META[slug] || {};
+
+  // Orden de prioridad para la foto:
+  //  1. Un archivo en public/products/ con el nombre del producto.
+  //  2. La foto declarada en PRODUCT_META (sirve para nombres que
+  //     cambiaron en la planilla pero conservan la foto vieja).
+  //  3. La imagen genérica de la categoría.
+  const image = PRODUCT_IMAGES[slug] || meta.image || PLACEHOLDER[category] || PLACEHOLDER.res;
+
   return {
     key: `${category}:${slug}`,
     id: slug,
@@ -87,7 +96,8 @@ function decorar({ category, name, price }) {
     name: meta.name || prettify(name),
     price,
     unit: meta.unit || null,
-    image: meta.image || PLACEHOLDER[category] || PLACEHOLDER.res,
+    image,
+    tieneFoto: image !== (PLACEHOLDER[category] || PLACEHOLDER.res),
     description: meta.description || "",
   };
 }

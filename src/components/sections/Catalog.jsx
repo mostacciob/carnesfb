@@ -36,7 +36,11 @@ export default function Catalog() {
     ? CATEGORIES
     : CATEGORIES.filter((c) => productos.some((p) => p.category === c.id));
 
-  const visibles = productos.filter((p) => p.category === active);
+  // Los productos con foto propia van primero; dentro de cada grupo se
+  // respeta el orden de las filas de la planilla (sort es estable).
+  const visibles = productos
+    .filter((p) => p.category === active)
+    .sort((a, b) => Number(b.tieneFoto) - Number(a.tieneFoto));
 
   return (
     <section id="catalogo" ref={sectionRef} className="bg-white py-24 lg:py-32">
