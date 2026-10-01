@@ -38,6 +38,28 @@ export const CATEGORIES = [
   { id: "achuras", sheet: "achuras", label: "Achuras", description: "Embutidos y achuras para la parrilla" },
   { id: "congelados", sheet: "congelados y mas", label: "Congelados", description: "Congelados, rebozados y quesos" },
   { id: "extras", sheet: "extras", label: "Extras", description: "Carbón, huevos, picada y más" },
+
+  // 😄 Categoría de joda, NO existe en la planilla: los productos salen
+  // de "local" acá abajo. Para sacarla, borrá este bloque entero.
+  {
+    id: "carniceros",
+    label: "Carniceros",
+    description: "Los que están atrás del mostrador",
+    local: [
+      {
+        name: "Mascarita",
+        price: 999999,
+        unit: "kg",
+        description: "Corte premium de exportación. Stock limitado: hay uno solo.",
+      },
+      {
+        name: "Tripa",
+        price: 888888,
+        unit: "kg",
+        description: "Corte joven, magro y de buena presencia. Se entrega con camisa incluida.",
+      },
+    ],
+  },
 ];
 
 export const HERO_IMAGE = "/hero.webp";

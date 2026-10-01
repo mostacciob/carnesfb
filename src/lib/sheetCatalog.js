@@ -78,7 +78,7 @@ function parseCsvLine(line) {
 }
 
 /** Combina una fila de la planilla con los metadatos locales (foto, descripción, unidad). */
-function decorar({ category, name, price }) {
+function decorar({ category, name, price, unit, description }) {
   const slug = slugify(name);
   const meta = PRODUCT_META[slug] || {};
 
@@ -95,10 +95,10 @@ function decorar({ category, name, price }) {
     category,
     name: meta.name || prettify(name),
     price,
-    unit: meta.unit || null,
+    unit: unit ?? meta.unit ?? null,
     image,
     tieneFoto: image !== (PLACEHOLDER[category] || PLACEHOLDER.res),
-    description: meta.description || "",
+    description: description ?? meta.description ?? "",
   };
 }
 
@@ -127,7 +127,15 @@ function fallbackDeCategoria(id) {
 }
 
 async function cargar() {
-  const resultados = await Promise.allSettled(CATEGORIES.map(fetchTab));
+  const resultados = await Promise.allSettled(
+    CATEGORIES.map((categoria) =>
+      // Una categoría con "local" no vive en la planilla: sus productos
+      // están escritos en el código.
+      categoria.local
+        ? Promise.resolve(categoria.local.map((p) => decorar({ category: categoria.id, ...p })))
+        : fetchTab(categoria)
+    )
+  );
 
   const productos = [];
   let hojasOk = 0;
