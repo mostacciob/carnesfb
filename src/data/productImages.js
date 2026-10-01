@@ -28,7 +28,6 @@ export const PRODUCT_IMAGES = {
   "lena-tipo-2": "/products/lena-tipo-2.webp",
   "lomo": "/products/lomo.webp",
   "longaniza": "/products/longaniza.webp",
-  "mascarita": "/products/mascarita.webp",
   "matambre-de-cerdo": "/products/matambre-de-cerdo.webp",
   "miel-namuncura": "/products/miel-namuncura.webp",
   "mollejas": "/products/mollejas.webp",
@@ -45,6 +44,5 @@ export const PRODUCT_IMAGES = {
   "pulpa-de-cerdo": "/products/pulpa-de-cerdo.webp",
   "salchicha-parrillera": "/products/salchicha-parrillera.webp",
   "tira-de-asado": "/products/tira-de-asado.webp",
-  "tripa": "/products/tripa.webp",
   "vacio": "/products/vacio.webp",
 };
